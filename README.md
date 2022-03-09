@@ -1,7 +1,9 @@
 # D2D-Armour
 Usable armour items that applies clothing to your character aswell as sound effects. When the player dies it removes the component from their body.
 
-Install guide:
+The armour cannot be stacked or exploited.
+
+Installation guide:
 
 1) Import SQL file into your databse.
 2) Drag and Drop "D2D-Armour" into your resource directory.
