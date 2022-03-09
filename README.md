@@ -8,7 +8,8 @@ Installation guide:
 1) Import SQL file into your databse.
 2) Drag and Drop "D2D-Armour" into your resource directory.
 3) Add "D2D-Armour" into your "Server.CFG"
-4) Restart & Enjoy!
+4) Add item png's into your inventory system (if you wish)
+5) Restart server & Enjoy!
 
 I am working on a fix for the script to recognise male/female peds so the vests match up.
 
