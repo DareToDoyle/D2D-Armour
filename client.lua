@@ -17,7 +17,7 @@ AddEventHandler('D2D-Armor:Light', function()
     TaskPlayAnim(PlayerPedId(), 'clothingtie', 'try_tie_negative_a', 8.0, 2.0, 1200, 48, 10, 0, 0, 0)     -- Plays a specific animation within the dictionary.
 	Citizen.Wait(200)
 	SendNUIMessage({sound = "bpvest", volume = 0.2})                                                      -- Plays a sound in the UI folder.
-	SetPedComponentVariation(player, 9, 26, 0, 2)                                                         -- This means "ped, Clothing Type (bulletproof vest) , bulletproof vest 1 (/skin menu), bulletproof vest 2(/skin menu), unknown"
+	SetPedComponentVariation(player, 9, 1, 0, 2)                                                         -- This means "ped, Clothing Type (bulletproof vest) , bulletproof vest 1 (/skin menu), bulletproof vest 2(/skin menu), unknown"
     SetPedArmour(player, 25)                                                                              -- Doesn't allow players to "stack" the armor.
 end)
 end)
@@ -30,7 +30,7 @@ AddEventHandler('D2D-Armor:Medium', function()
 	Citizen.Wait(200)
 	SendNUIMessage({sound = "bpvest", volume = 0.2}) 
     SetPedArmour(player, 50)
-	SetPedComponentVariation(player, 9, 26, 7, 2) 
+	SetPedComponentVariation(player, 9, 1, 1, 2) 
 end)
 end)
 
@@ -42,7 +42,7 @@ AddEventHandler('D2D-Armor:Heavy', function()
 	Citizen.Wait(200)
 	SendNUIMessage({sound = "bpvest", volume = 0.2})
     SetPedArmour(player, 75)
-	SetPedComponentVariation(player, 9, 15, 0, 2) 
+	SetPedComponentVariation(player, 9, 1, 2, 2) 
 end)
 end)
 
@@ -54,7 +54,7 @@ AddEventHandler('D2D-Armor:Military', function()
 	Citizen.Wait(200)
 	SendNUIMessage({sound = "bpvest", volume = 0.2})
     SetPedArmour(player, 100)
-	SetPedComponentVariation(player, 9, 16, 0, 2) 
+	SetPedComponentVariation(player, 9, 1, 3, 2) 
 end)
 end)
 
