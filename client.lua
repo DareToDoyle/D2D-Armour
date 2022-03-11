@@ -58,16 +58,9 @@ AddEventHandler('D2D-Armor:Military', function()
 end)
 end)
 
-Citizen.CreateThread(function()                       -- Checks if players are dead to remove their armour (You can increase the Citizen.Wait time for 
-	alreadyDead = false                               -- better performance but it will take longer to check if players are dead).
-    while true do
-        Citizen.Wait(50)
-		local playerPed = PlayerPedId()
-		if IsEntityDead(playerPed) and not alreadyDead then
-		SetPedComponentVariation(playerPed, 9, 0, 0, 0)
-		end
-		end
-		end)
+AddEventHandler('esx:onPlayerDeath', function(data)
+	SetPedComponentVariation(PlayerPedId(), 9, 0, 0, 0)
+end)
 
 
 --MADE BY DareToDoyle#3835--
